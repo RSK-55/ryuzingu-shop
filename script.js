@@ -10,7 +10,7 @@ const defaultProducts = [
       size: "約16",
       price: "¥12,800",
       images: []
-    // },
+     },
     // {
     //    id: 2,
      //   name: "翠嵐",
