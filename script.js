@@ -46,11 +46,9 @@ const ADMIN_CREDENTIALS = {
 
 // 商品データの初期化
 function initializeProducts() {
-    const stored = localStorage.getItem("ryujingu_products");
-    if (!stored) {
-        localStorage.setItem("ryujingu_products", JSON.stringify(defaultProducts));
-    }
-    
+    // ★毎回、defaultProductsで上書き（古い端末データを消す）
+    localStorage.setItem("ryujingu_products", JSON.stringify(defaultProducts));
+
     const settings = localStorage.getItem("ryujingu_settings");
     if (!settings) {
         localStorage.setItem("ryujingu_settings", JSON.stringify(defaultSettings));
