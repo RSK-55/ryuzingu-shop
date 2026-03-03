@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>龍神宮 - ブレスレットショップ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><span class="title-text">龍神宮</span><img src="C9B4E7B8-9C75-4738-8E5A-A457944656FD.png" alt="ロゴ" class="logo"></h1>
+        <p class="subtitle">龍の力を　纏いし者たちへ</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>石は単なる装飾ではなく、<br>持つ人の流れに静かに寄り添う存在であると考えています。</h2>
+            <p>最近、頑張っているのに流れが停滞していると感じていませんか。<br>それは努力が足りないのではなく、<br>五行のバランスが乱れているサインかもしれません。</p>
+        </section>
+
+        <section class="products" id="products">
+            <h2>商品一覧</h2>
+            <div class="product-grid" id="productGrid">
+            </div>
+        </section>
+
+        <section class="line-cta">
+            <h2>ご購入方法</h2>
+            <p>ご希望の商品が決まりましたら、以下のボタンからLINE公式アカウントまでご連絡ください。</p>
+            <a id="lineButton" href="https://line.me/ja/" target="_blank" class="line-button">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE">
+                LINEで問い合わせる
+            </a>
+        </section>
+
+        <section class="disclaimer">
+            <h3>免責事項</h3>
+            <p>本品には、市場で流通している天然石 beadsを使用しています</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 龍神宮 All Rights Reserved.</p>
+        <p><a href="admin.html">管理者画面</a></p>
+    </footer>
+
+    <!-- ポップアップモーダル -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-image" id="modalImage"></div>
+            <h3 id="modalName"></h3>
+            <p class="modal-tagline" id="modalTagline"></p>
+            <p class="modal-description" id="modalDescription"></p>
+            <p class="modal-size" id="modalSize"></p>
+            <p class="modal-price" id="modalPrice"></p>
+            <a id="modalLineBtn" href="#" target="_blank" class="line-button modal-buy-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE">
+                LINEで 구매하기
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
