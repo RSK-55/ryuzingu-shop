@@ -2,7 +2,7 @@
 
 // デフォルト商品データ
 const defaultProducts = [
-    {
+    // {
         id: 1,
         name: "龍の涙",
         tagline: "古のDragonの力を宿す逸品",
@@ -10,8 +10,8 @@ const defaultProducts = [
         size: "約17cm〜19cm（調整可能）",
         price: "¥12,800",
         images: []
-    },
-    {
+    // },
+    // {
         id: 2,
         name: "翠嵐",
         tagline: "森の精霊が紡ぐ癒しの波動",
@@ -19,8 +19,8 @@ const defaultProducts = [
         size: "約16cm〜18cm（調整可能）",
         price: "¥15,800",
         images: []
-    },
-    {
+    // },
+    // {
         id: 3,
         name: "海神の祝福",
         tagline: "大海原の力を手に",
@@ -28,7 +28,7 @@ const defaultProducts = [
         size: "約17cm〜20cm（調整可能）",
         price: "¥18,800",
         images: []
-    }
+ // }
 ];
 
 // デフォルト設定
