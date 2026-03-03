@@ -7,19 +7,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- 水の泡 -->
+    <div class="bubbles" id="bubbles"></div>
+
     <header>
-        <h1><span class="title-text">龍神宮</span><img src="C9B4E7B8-9C75-4738-8E5A-A457944656FD.png" alt="ロゴ" class="logo"></h1>
+        <h1><span class="title-text">龍神宮</span></h1>
         <p class="subtitle">龍の力を　纏いし者たちへ</p>
     </header>
 
     <main>
         <section class="hero">
-            <h2>石は単なる装飾ではなく、<br>持つ人の流れに静かに寄り添う存在であると考えています。</h2>
-            <p>最近、頑張っているのに流れが停滞していると感じていませんか。<br>それは努力が足りないのではなく、<br>五行のバランスが乱れているサインかもしれません。</p>
+            <h2>石は単なる装飾ではなく<br>持つ人の流れに静かに寄り添う存在であると考えています。</h2>
+            <p>最近、頑張っているのに流れが停滞していると感じていませんか。<br>それは努力が足りないのではなく<br>五行のバランスが乱れているサインかもしれません。</p>
         </section>
 
         <section class="products" id="products">
-            <h2>商品一覧</h2>
+            <div class="products-header">
+                <h2>商品一覧</h2>
+                <div class="filter-section">
+                    <div class="filter-row">
+                        <select id="sortSelect" onchange="applyFilters()">
+                            <option value="">並び替え</option>
+                            <option value="price-asc">金額▲</option>
+                            <option value="price-desc">金額▼</option>
+                        </select>
+                        <div class="filter-tags">
+                            <button class="filter-tag" onclick="filterByTag('金運強め')">金運強め</button>
+                            <button class="filter-tag" onclick="filterByTag('恋愛運強め')">恋愛運強め</button>
+                            <button class="filter-tag" onclick="filterByTag('浄化強め')">浄化強め</button>
+                            <button class="filter-tag" onclick="filterByTag('抑制強め')">抑制強め</button>
+                        </div>
+                    </div>
+                    <div class="gogyou-filter">
+                        <span class="gogyou-label">五行で探す：</span>
+                        <button class="gogyou-btn" onclick="filterByTag('木')">木</button>
+                        <button class="gogyou-btn" onclick="filterByTag('火')">火</button>
+                        <button class="gogyou-btn" onclick="filterByTag('土')">土</button>
+                        <button class="gogyou-btn" onclick="filterByTag('金')">金</button>
+                        <button class="gogyou-btn" onclick="filterByTag('水')">水</button>
+                        <button class="gogyou-btn" onclick="filterByTag('')">すべて</button>
+                    </div>
+                </div>
+            </div>
             <div class="product-grid" id="productGrid">
             </div>
         </section>
@@ -31,6 +60,16 @@
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE">
                 LINEで問い合わせる
             </a>
+            <div class="social-links" id="instagramSection">
+                <a id="instagramFortune" href="#" target="_blank" class="instagram-button">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                    占い用Instagram
+                </a>
+                <a id="instagramBracelet" href="#" target="_blank" class="instagram-button">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                    ブレスレット用Instagram
+                </a>
+            </div>
         </section>
 
         <section class="disclaimer">
@@ -56,7 +95,7 @@
             <p class="modal-price" id="modalPrice"></p>
             <a id="modalLineBtn" href="#" target="_blank" class="line-button modal-buy-btn">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/LINE_logo.svg" alt="LINE">
-                LINEで 구매하기
+                購入☞公式ライン
             </a>
         </div>
     </div>
