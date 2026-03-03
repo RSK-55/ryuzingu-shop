@@ -2,14 +2,14 @@
 
 // デフォルト商品データ
 const defaultProducts = [
-    // {
-      //  id: 1,
-       // name: "龍の涙",
-    //    tagline: "古のDragonの力を宿す逸品",
-       // description: "西藏天然石と水晶をベースに、龍の鱗を象ったチャームを配置。持ち主を見守る力があるとされる神秘的な一品です。",
-      //  size: "約17cm〜19cm（調整可能）",
-      //  price: "¥12,800",
-       // images: []
+     {
+      id: 1,
+      name: シルバールチルクォーツ 
+    tagline: "天然高品質ルチルクォーツ",
+      description: "ヒマラヤ山産天然水晶 #水 ",
+      size: "約16",
+      price: "¥12,800",
+      images: []
     // },
     // {
     //    id: 2,
