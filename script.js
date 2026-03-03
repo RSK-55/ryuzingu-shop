@@ -3,13 +3,13 @@
 // デフォルト商品データ
 const defaultProducts = [
      {
-      id: 1,
-      name: シルバールチルクォーツ 
-    tagline: "天然高品質ルチルクォーツ",
-      description: "ヒマラヤ山産天然水晶 #水 ",
-      size: "約16",
-      price: "¥12,800",
-      images: []
+        id: 1,
+        name: シルバールチルクォーツ 
+        tagline: "天然高品質ルチルクォーツ",
+        description: "ヒマラヤ山産天然水晶 #水 ",
+        size: "約16",
+        price: "¥12,800",
+        images: []
      },
     // {
     //    id: 2,
